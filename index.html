@@ -8,7 +8,7 @@
 	Password: <input type="password" id="password"><br>
 	Password confirm: <input type="password" id="password2">
 	</form>
-	<button onclick="passWord()"> Authienticattteee </button>
+	<button onclick="passWord()"> Authenticate </button>
 
 <p><b>Note:</b> The characters in a password field are masked (shown as asterisks or circles).</p>
 
@@ -23,15 +23,11 @@
 
 			if(pass1 != pass2)
 			{
-				alert("The passwords dont match")
+				alert("The enterd passwords dont match")
 			}
 			else if(pass1.length < 8 || pass2.length < 8)
 			{
-				alert("The passwords must me at least 8")
-			}
-			else if(pass1.length != pass2.length)
-			{
-				alert("The passwords must me at least 8")
+				alert("The passwords are not at least 8 characters")
 			}
 			else if(pass1 == pass)
 			{
