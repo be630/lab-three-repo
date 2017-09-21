@@ -4,11 +4,12 @@
 	</head>
 
 	<body>
-        <img src="http://img.astrospeak.com/slide/421-0-58c9144d2a11bef3a5cc7c24/nature-and-looks-58c915d36190b.jpg" id="pic1" >
-		<button onclick="picDisplay()"> Forward </button>
+        <img src="http://img.astrospeak.com/slide/421-0-58c9144d2a11bef3a5cc7c24/nature-and-looks-58c915d36190b.jpg" id="pic1" width="100" height="200" >
+		<button onclick="picDisplayForward()"> Forward </button>
+		<button onclick="picDisplayPrevious()"> Previous </button>
 		<script>
 		
-		function picDisplay()
+		function picDisplayForward()
 		{
 			var arr1 = ["http://img.astrospeak.com/slide/421-0-58c9144d2a11bef3a5cc7c24/nature-and-looks-58c915d36190b.jpg", "https://www.astrogle.com/images/articles/numerology/number-2.png" , "https://mysticalnumbers.com/wp-content/uploads/2012/06/Number-3-bright.png" , "http://numerologystars.com/wp-content/uploads/2011/12/number-4-2.jpg" , "http://www.printableparadise.com/numbers/printable-number-5-outline.png" ]
 			var spot = arr1.indexOf(document.getElementById("pic1").src)
@@ -32,6 +33,33 @@
 			if(spot == 4)
 			{
 				document.getElementById("pic1").src = arr1[0]
+			}
+			
+		}
+		function picDisplayPrevious()
+		{
+			var arr1 = ["http://img.astrospeak.com/slide/421-0-58c9144d2a11bef3a5cc7c24/nature-and-looks-58c915d36190b.jpg", "https://www.astrogle.com/images/articles/numerology/number-2.png" , "https://mysticalnumbers.com/wp-content/uploads/2012/06/Number-3-bright.png" , "http://numerologystars.com/wp-content/uploads/2011/12/number-4-2.jpg" , "http://www.printableparadise.com/numbers/printable-number-5-outline.png" ]
+			var spot = arr1.indexOf(document.getElementById("pic1").src)
+			
+			if(spot == 0)
+			{
+				document.getElementById("pic1").src = arr1[4]
+			}
+			if(spot == 1)
+			{
+				document.getElementById("pic1").src = arr1[0]
+			}
+			if(spot == 2)
+			{
+				document.getElementById("pic1").src = arr1[1]
+			}
+			if(spot == 3)
+			{
+				document.getElementById("pic1").src = arr1[2]
+			}
+			if(spot == 4)
+			{
+				document.getElementById("pic1").src = arr1[3]
 			}
 			
 		}
