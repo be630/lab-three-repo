@@ -1,16 +1,23 @@
 p
 {
-    background-color: blue;
+    background-color: grey;
 	color: red;
 	font-family: Times New Roman;
 	font-size: 22pt;
 }
 p.altColor
 {
-	background-color: green;
+	background-color: grey;
 	color: navy;
 	font-family: Times New Roman;
 	font-size: 22pt;
+}
+p.alt2
+{
+	background-color: black;
+	color: red;
+	font-family: Times New Roman;
+	font-size: 16pt;
 }
 a
 {
@@ -21,4 +28,12 @@ a:hover
 {
 	background-color: red;
 	color: yellow;
+}
+body
+{
+	background-image: url(images/American-Flag-10.gif);
+	background-size: 100%;
+	background-repeat: no_repeat;
+	background-attachment: fixed;
+	
 }
