@@ -2,12 +2,53 @@
 <html>
 	<head>
 		<title> CSS through JavaScript </title>
+		<link rel="stylesheet" type="text/css" href="myStyle2.css">
 	</head>
 
 	<body>
-      <p> This is a dummy paragraph. And not like "filler" text. Literally this paragraph has its own identity, and with it, comes an I.Q. And you might not be suprised to find that the dummy paragraph's in LOW. Like, really low. Like so low that.... but enough about that, LETS MAKES SOME CHANGES!</p>	  
+      <p class="mainPara" id="mainPara"> This is a dummy paragraph. And not like "filler" text. Literally this paragraph has its own identity, and with it, comes an I.Q. And you might not be suprised to find that the dummy paragraph's in LOW. Like, really low. Like so low that.... but enough about that, LETS MAKES SOME CHANGES!</p>	  
 
-
+	<p class="inputBox">
+	Border Values (0-255)
+	<br>
+	red value: <input type="text" id="redValBo"><br>
+	green value: <input type="text" id="greenValBo"><br>
+	blue value: <input type="text" id="bluevalBo"><br>
+	width  : <input type="text" id="widthValBo"><br>
+	</p>
+	<br><br><br><br>
+	<p class="inputBox">
+	Background Values (0-255)<br>
+	red value: <input type="text" id="redValBg"><br>
+	green value: <input type="text" id="greenValBg"><br>
+	blue value: <input type="text" id="blueValBg"><br>
+	</p>
+	
+	<button onclick="changeP()"> Update Colors </button>
+	
+	<script>
+		function changeP()
+		{
+			var changePara =document.getElementById("mainPara");
+		
+			var redBorder =document.getElementById("redValBo").value;
+			var	greenBorder =document.getElementById("greenValBo").value;
+			var blueBorder =document.getElementById("redValBo").value;
+			var borderWidth =document.getElementById("redValBo").value;
+			
+			var redBg =document.getElementById("redValBo").value;
+			var	greenBg =document.getElementById("redValBo").value;
+			var blueBg =document.getElementById("redValBo").value;
+			
+			changePara.style.borderColor = 'rgb( '+redBorder+', '+greenBorder+', '+blueBorder+')';
+			changePara.style.borderWidth = borderWidth + 'px';
+			changePara.style.backgroundColor = 'rgb( '+redBg+', '+greenBg+' , '+blueBg+')';
+		
+		}
+		
+	
+	
+	</script>
 
 
 
